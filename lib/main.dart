@@ -21,21 +21,20 @@ class MyApp extends StatelessWidget {
               ),
               Text(
                 'Jaykon',
-                style: TextStyle(
-                  fontFamily: 'Pacifico',
-                  fontSize: 40.00,
+                style: GoogleFonts.pacifico(
+                  fontSize: 40,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
                 'FLUTTER DEVELOPER',
-                style: TextStyle(
-                    fontFamily: 'Source Sans Pro',
-                    color: Colors.teal.shade100,
-                    fontSize: 20.00,
-                    letterSpacing: 2.5,
-                    fontWeight: FontWeight.bold),
+                style: GoogleFonts.sourceSansPro(
+                  color: Colors.teal.shade100,
+                  fontSize: 20,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               SizedBox(
                 height: 20.0,
@@ -54,8 +53,7 @@ class MyApp extends StatelessWidget {
                   ),
                   title: Text(
                     '+2348145249488',
-                    style: TextStyle(
-                      fontFamily: 'Source Sans Pro',
+                    style: GoogleFonts.sourceSansPro(
                       fontSize: 20,
                     ),
                   ),
@@ -74,8 +72,7 @@ class MyApp extends StatelessWidget {
                   ),
                   title: Text(
                     'jaykon4me@gmail.com',
-                    style: TextStyle(
-                      fontFamily: 'Source Sans Pro',
+                    style: GoogleFonts.sourceCodePro(
                       fontSize: 20,
                     ),
                   ),
