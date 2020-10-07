@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blue,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
               Text(
                 'FLUTTER DEVELOPER',
                 style: GoogleFonts.sourceSansPro(
-                  color: Colors.teal.shade100,
+                  color: Colors.blue.shade100,
                   fontSize: 20,
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
               SizedBox(
                 height: 20.0,
                 width: 150.0,
-                child: Divider(color: Colors.teal.shade100),
+                child: Divider(color: Colors.blue.shade100),
               ),
               Card(
                 margin: EdgeInsets.symmetric(
@@ -47,9 +48,10 @@ class MyApp extends StatelessWidget {
                   horizontal: 25.0,
                 ),
                 child: ListTile(
-                  leading: Icon(
-                    Icons.phone,
-                    color: Colors.teal,
+                  leading: FaIcon(
+                    FontAwesomeIcons.phone,
+                    color: Colors.blue,
+                    size: 20,
                   ),
                   title: Text(
                     '+2348145249488',
@@ -68,11 +70,49 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
-                    color: Colors.teal,
+                    color: Colors.blue,
                   ),
                   title: Text(
                     'jaykon4me@gmail.com',
                     style: GoogleFonts.sourceCodePro(
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                child: ListTile(
+                  leading: FaIcon(
+                    FontAwesomeIcons.twitter,
+                    color: Colors.blue,
+                    size: 20,
+                  ),
+                  title: Text(
+                    'am_jaykon',
+                    style: GoogleFonts.sourceSansPro(
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                child: ListTile(
+                  leading: FaIcon(
+                    FontAwesomeIcons.github,
+                    color: Colors.blue,
+                    size: 20,
+                  ),
+                  title: Text(
+                    'j-kon',
+                    style: GoogleFonts.sourceSansPro(
                       fontSize: 20,
                     ),
                   ),
